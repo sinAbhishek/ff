@@ -12,7 +12,8 @@ function App() {
     call();
   }, []);
   return (
-    <div className="App">
+    <div className="App flex flex-wrap justify-center">
+    
       {data && data.map((c) => <Card chardetails={c} />)}
     </div>
   );

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: black;
+
+}
+.container{
+    width: 250px;
+    margin: 1rem;
+    height: 400px;
+}
+.container:hover> .card{
+    transform: rotateY(180deg);
+}
+.card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+
+}
+.card:hover{
+
+}
+.imstyle{
+    border-radius: 10px 10px 100px 0px;
+}
+.front,.back{
+    height: 100%;
+    width: 100%;  
+    position: absolute;  
+    backface-visibility: hidden;
+    
+}
+.front{
+    background-color: rgb(39, 42, 42);
+
+}
+.back{
+    background: rgb(2,0,36);
+    background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 51%, rgba(0,212,255,1) 100%);
+    transform: rotateY(180deg);
+}
