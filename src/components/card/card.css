@@ -1,47 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-background-color: black;
-
+body {
+  background-color: black;
 }
-.container{
-    width: 250px;
-    margin: 1rem;
-    height: 400px;
+.MuiBox-root {
+  width: 60vw !important;
+  height: 70vh !important;
+  background-color: rgb(14, 13, 13) !important;
+  border-radius: 10px !important;
+  border: 10px rgb(248, 10, 10) !important;
+  border-style: solid !important;
+  padding: 0px !important;
 }
-.container:hover> .card{
-    transform: rotateY(180deg);
+.container {
+  width: 250px;
+  margin: 1rem;
+  height: 400px;
 }
-.card{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    transition: 1s;
-    transform-style: preserve-3d;
-
+.container:hover > .card {
+  transform: rotateY(180deg);
 }
-.card:hover{
-
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: 1s;
+  transform-style: preserve-3d;
 }
-.imstyle{
-    border-radius: 10px 10px 100px 0px;
+.card:hover {
 }
-.front,.back{
-    height: 100%;
-    width: 100%;  
-    position: absolute;  
-    backface-visibility: hidden;
-    
+.imstyle {
+  border-radius: 10px 10px 100px 0px;
 }
-.front{
-    background-color: rgb(39, 42, 42);
-
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
 }
-.back{
-    background: rgb(2,0,36);
-    background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 51%, rgba(0,212,255,1) 100%);
-    transform: rotateY(180deg);
+.front {
+  background-color: rgb(39, 42, 42);
+}
+.back {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    10deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 51%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  transform: rotateY(180deg);
+}
+.modimg {
+  width: 150px;
+  height: 200px;
 }
