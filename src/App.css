@@ -2,3 +2,8 @@
 .titlest {
   font-family: "Press Start 2P", cursive;
 }
+@media screen and (max-width: 460px) {
+  .titlest {
+    font-size: 2rem;
+  }
+}
