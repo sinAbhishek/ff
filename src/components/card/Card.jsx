@@ -26,14 +26,17 @@ const Card = ({ chardetails }) => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   useEffect(() => {
-    console.log(chardetails);
     setrandom(Math.floor(Math.random() * 2 + 1));
   }, []);
   useEffect(() => {
     const call = async () => {
-      const res = await axios.get(chardetails.homeworld);
-      console.log(res.data);
-      sethome(res.data);
+      try {
+        const res = await axios.get(chardetails.homeworld);
+
+        sethome(res.data);
+      } catch (err) {
+        console.log(err);
+      }
     };
     chardetails && call();
   }, [chardetails]);
